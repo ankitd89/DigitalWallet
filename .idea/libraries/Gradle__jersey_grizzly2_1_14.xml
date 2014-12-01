@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: jersey-grizzly2-1.14">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-grizzly2/1.14/63565c7b01923a08c76c45bb3bd37d2b52b7ae13/jersey-grizzly2-1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-grizzly2/1.14/6e7099764f1dadb3adcb2a6b1eb94c0e18a02ddf/jersey-grizzly2-1.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

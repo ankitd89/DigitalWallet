@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.6.RELEASE")
+
+
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'idea'
+apply plugin: 'scala'
+
+jar {
+    baseName = 'wallet'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-release" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile 'org.scala-lang:scala-library:2.10.4'
+    testCompile("junit:junit")
+    compile 'org.springframework.data:spring-data-mongodb:1.6.0.RELEASE'
+    compile("javax.ws.rs:jsr311-api:1.1.1")
+    compile("com.sun.jersey:jersey-server:1.14")
+    compile("com.sun.jersey:jersey-grizzly2:1.14")
+    compile("com.sun.jersey:jersey-core:1.14")
+    compile("com.fasterxml.jackson.core:jackson-databind")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
